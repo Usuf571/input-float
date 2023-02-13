@@ -1,0 +1,51 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {all: unset;display: revert;}
+*,
+*::before,
+*::after {box-sizing: border-box;}
+a, button {cursor: revert;}
+ol, ul, menu {list-style: none;}
+img {max-inline-size: 100%;max-block-size: 100%;}
+table {border-collapse: collapse;}
+input, textarea {-webkit-user-select: auto;}
+textarea {white-space: revert;}
+meter {-webkit-appearance: revert;appearance: revert;}
+pre {all: revert;}
+::placeholder {color: unset;}
+::marker {content: initial;}
+:where([hidden]) {display: none;}
+:where([contenteditable]:not([contenteditable="false"])) {-moz-user-modify: read-write;-webkit-user-modify: read-write;overflow-wrap: break-word;-webkit-line-break: after-white-space;-webkit-user-select: auto;}
+:where([draggable="true"]) {-webkit-user-drag: element;}
+:where(dialog:modal) {all: revert;}
+body{
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-group {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10%;
+
+}
+#email {
+    border: 1px solid orange;
+    min-height: 40px;
+    padding: 5px;
+    transition: 1s;
+}
+#email:focus{
+    border: 2px solid orange;
+}
+.float-input-input-label {
+    font-size: 48px;
+    box-shadow: 5px black;
+    
+
+}
+
+.button{
+    padding: 5px;
+    min-height: 30px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
